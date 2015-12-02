@@ -2,6 +2,7 @@ $ = jQuery = require('jquery');	// This is saying there are two ways to referenc
 var React = require('react');
 var Home = require('./components/homePage');
 var About = require('./components/about/aboutPage');
+var Header = require('./components/common/header'); // Adding in the header 
 
 (function(win){
 
@@ -18,6 +19,7 @@ var About = require('./components/about/aboutPage');
 
 			return (
 				<div>
+					<Header/>
 					<Child/>
 				</div>
 			);
